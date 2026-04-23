@@ -1,16 +1,3 @@
-"""
-🐭 KIPANYA v2 - Mediapipe 0.10+ compatible!
-By Isaac @ ATC
-
-Install:
-    pip install mediapipe opencv-python pyautogui
-
-Run:
-    python kipanya.py
-
-NOTE: Mara ya kwanza itadownload model ndogo (~5MB) automatically.
-"""
-
 import cv2
 import pyautogui
 import math
@@ -21,9 +8,7 @@ import mediapipe as mp
 from mediapipe.tasks import python as mp_python
 from mediapipe.tasks.python import vision
 
-# ══════════════════════════════════════════
-#              MIPANGILIO
-# ══════════════════════════════════════════
+
 CAMERA_ID       = 0
 SMOOTHING       = 7
 CLICK_THRESHOLD = 30
@@ -34,7 +19,7 @@ MODEL_URL       = (
     "https://storage.googleapis.com/mediapipe-models/"
     "hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task"
 )
-# ══════════════════════════════════════════
+
 
 pyautogui.FAILSAFE = False
 pyautogui.PAUSE    = 0
